@@ -1,0 +1,282 @@
+:root {
+  /* background-color: #ecf5ff; */
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* color: #333; */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 5.4rem;
+  color: white;
+  margin-bottom: 5rem;
+}
+
+h1 > span {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 4.2rem;
+  margin-bottom: 4rem;
+  font-weight: 700;
+  color: white;
+}
+
+h3 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+
+/* UTILITIES */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+}
+
+.container > * {
+  width: 100%;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/* BUTTONS */
+.btn_ins{
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  border: 0.3rem ridge white;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+}
+
+.btn_ins:hover{
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(235, 242, 243, 0.562);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+.btn_ins[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.play{
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  border: 0.3rem ridge white;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+}
+
+.play:hover{
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(235, 242, 243, 0.562);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+.play[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.btn{
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  width: 20rem;
+  text-align: center;
+  border: 0.3rem ridge white;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+}
+
+.btn:hover{
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(235, 242, 243, 0.562);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+.btn[disabled]:hover {
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+#home h1{
+  font-size: 6rem;
+  text-align: center;
+  text-shadow: 0 0.4rem 1.4rem 0 #333;
+}
+
+#home .logo_img{
+  margin-bottom: 2rem;
+}
+/* FORMS */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  margin-bottom: 1rem;
+  width: 20rem;
+  padding: 1.5rem;
+  font-size: 1.8rem;
+  border: none;
+  box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* Video background CSS */
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.info_box.activeInfo
+{
+    opacity: 1;
+    z-index: 5;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.info_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.info_box{
+  width: auto;
+  background: rgb(31, 27, 27);
+  color: white;
+  /* border-radius: 5px; */
+  border: 0.3rem ridge white;
+  transform: translate(-50%, -50%) scale(0.9);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.info_box .info-title{
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  /* border-radius: 5px 5px 0 0; */
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.info_box .info-list{
+  padding: 4rem;
+}
+
+.info_box .info-list .info{
+  margin: 5px 0;
+  font-size: 17px;
+}
+
+.info_box .info-list .info span{
+  font-weight: 600;
+  color: white;
+}
+
+.info_box .buttons{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 30px;
+  border-top: 1px solid lightgrey;
+}
+
+.info_box .buttons button{
+  font-size: 1.8rem;
+  padding: 0.8rem 0;
+  width: 10rem;
+  text-align: center;
+  border: 0.3rem ridge white;
+  margin: 1.5rem;
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+}
+
+.info_box .buttons button:hover{
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(235, 242, 243, 0.562);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+#finalScore h1{
+  margin-bottom: 1rem;
+}

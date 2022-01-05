@@ -1,0 +1,90 @@
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.8rem;
+  border: 0.3rem ridge white;
+  background-color: transparent;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(235, 242, 243, 0.562);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  background-color: #ffffff40;
+  color: white;
+}
+
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+  border-left: 0.3rem ridge white;
+  color: white;
+}
+
+.correct {
+  background-color: #30eb5cbb;
+}
+
+.incorrect {
+  background-color: #f13548d3;
+}
+
+/* HUD */
+
+#hud {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hud-prefix {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.hud-main-text {
+  text-align: center;
+}
+
+#progressBar {
+  width: 20rem;
+  height: 4rem;
+  border: 0.3rem solid white;
+  margin-top: 1.5rem;
+}
+
+#progressBarFull {
+  height: 3.4rem;
+  background-color: rgba(255, 255, 255, 0.301);
+  width: 0%;
+}
+
+#question h2{
+  color: white;
+}
+
+/* LOADER */
+#loader {
+  border: 1.6rem solid rgb(31, 27, 27);
+  border-radius: 50%;
+  border-top: 1.6rem solid white;
+  width: 12rem;
+  height: 12rem;
+  animation: spin 2s linear infinite;
+  
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Big Brains</title>
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <!-- Background video -->
+    <video autoplay muted loop id="myVideo">
+      <source src="media/quiz_app.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
+    <div class="container" id="main">
+      <div id="home" class="flex-center flex-column">
+        <img src="media/logo.png" alt="Big Brain Logo" class="logo_img">
+        <h1>Big Brains!</h1>
+        <div class="instructions"><button class="btn_ins">Instructions</button></div>
+        <a class="play" href="game.html">Play!</a>
+      </div>
+    </div>
+
+    <div class="info_box">
+      <div class="info-title"><span>Instructions</span></div>
+      <div class="info-list">
+          <div class="info">1. There is no <span>timer</span> in this quiz.</div>
+          <div class="info">2. Once you select your answer, it can't be undone.</div>
+          <div class="info">3. You'll get points on the basis of your correct answers.</div>
+          <div class="info">4. There are 10 points alloted for each correct answer.</div>
+          <div class="info">4. There is no negative marking.</div>
+          <div class="info">5. You can't exit from the Quiz while you're playing.</div>
+          <div class="info">6. Good Luck!.</div>
+      </div>
+      <div class="buttons">
+          <button class="quit">Back</button>
+          
+      </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>
